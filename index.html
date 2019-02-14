@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="pt-br">
+  
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cardápio Crazy Burguer</title>
+    <meta name="author" content="Jordy Araújo" />
+    <meta name="description" content="Cardápio online para a hamburgueria Crazy Burguer" />
+    <meta name="keywords" content="cardapio, menu, hamburguer, burguer, burger, crazy, sanduiche, sandwich, hamburgueria, sanduicheria, gourmet, caseiro, barato, preço" />
+    <style>
+      
+      html {
+        background-color: #faf7fb;
+        background-image: url("file:///home/jordy/Desktop/CrazyMenu/default.jpg");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: center top;
+        background-size: 100% 100%;
+        font-family: "Lucida Sans", sans-serif;
+      }
+
+      body {
+        max-width: 720px;
+        margin: auto;
+        display: table;
+        margin: 0 auto;
+      }
+      
+      * {
+        box-sizing: border-box;
+      }      
+      
+      /* For mobile phones: */
+      .grid-container {
+        display: grid;
+        grid-template-columns: auto;
+      }
+      
+      content {
+        width: 80%;
+        float: left;
+        padding: 15px;
+        margin-top: 60%;
+        margin-bottom: 30%;
+      }
+      
+      @media only screen and (min-width: 720px) {
+        /* For desktop: */
+        .grid-container {
+          display: grid;
+          grid-template-columns: auto auto;
+        }
+        
+        content {
+        width: 80%;
+        float: left;
+        padding: 15px;
+        margin-top: 20%;
+        margin-bottom: 20%;
+      }
+      }
+
+      :link {
+        color: #0000ee;
+      }
+
+      :link:active {
+        color: #ee0000;
+      }
+
+      :link:visited {
+        color: #551a8b;
+      }
+
+      .latEsq {
+        width: 10%;
+        float: left;
+        padding: 15px;
+      }
+
+      .latDir {
+        width: 10%;
+        float: right;
+        padding: 15px;
+      }
+
+      .grid-item {
+        padding: 10px;
+      }
+     </style>
+  </head>
+  <body>
+    <div style=" margin: auto;">
+      <div class="latEsq"> </div>
+      <content>
+        <form name="pedido" action="" method="GET" autocomplete="off" enctype="text/plain">
+          <h3> Combos <i class="material-icons"></i></h3>
+          <div class="grid-container">
+            <div class="grid-item"><input name="X-Burguer" value="xb" form="pedido"
+                type="checkbox" /> Combo 01 (X-Burguer)</div>
+            <div class="grid-item"><input name="X-Burguer" value="xb" form="pedido"
+                type="checkbox" /> Combo 02 (Franbacon)</div>
+            <div class="grid-item"><input name="X-Burguer" value="xb" form="pedido"
+                type="checkbox" /> Combo 03 (X-Bacon)</div>
+            <div class="grid-item"><input name="X-Burguer" value="xb" form="pedido"
+                type="checkbox" /> Combo 04 (Peppa Pig)</div>
+            <div class="grid-item"><input name="X-Burguer" value="xb" form="pedido"
+                type="checkbox" /> Combo 05 (Crazy Burguer)</div>
+            <div class="grid-item"><input name="X-Burguer" value="xb" form="pedido"
+                type="checkbox" /> Combo 06 (Tropical)</div>
+            <div class="grid-item"><input name="X-Burguer" value="xb" form="pedido"
+                type="checkbox" /> Combo 07 (Chilli Cheddar)</div>
+          </div>
+          <h3 style="padding-top: 20px;"> Sanduíches <i class="material-icons"></i></h3>
+          <div class="grid-container">
+            <div class="grid-item"><input name="X-Burguer" value="xb" form="pedido"
+                type="checkbox" /> X-Burguer</div>
+            <div class="grid-item"><input name="X-Burguer" value="xb" form="pedido"
+                type="checkbox" /> Cartola Burguer</div>
+            <div class="grid-item"><input name="X-Burguer" value="xb" form="pedido"
+                type="checkbox" /> Chilli Cheddar</div>
+            <div class="grid-item"><input name="X-Burguer" value="xb" form="pedido"
+                type="checkbox" /> Franbacon</div>
+            <div class="grid-item"><input name="X-Burguer" value="xb" form="pedido"
+                type="checkbox" /> X-Bacon</div>
+            <div class="grid-item"><input name="X-Burguer" value="xb" form="pedido"
+                type="checkbox" /> Peppa Pig</div>
+            <div class="grid-item"><input name="X-Burguer" value="xb" form="pedido"
+                type="checkbox" /> Crazy Burguer</div>
+            <div class="grid-item"><input name="X-Burguer" value="xb" form="pedido"
+                type="checkbox" /> Tropical</div>
+          </div>
+          <h3 style="padding-top: 20px;"> Bebidas </h3>
+          <div class="grid-container">
+            <div class="grid-item"><input name="X-Burguer" value="xb" form="pedido"
+                type="checkbox" /> Refrigerante em Lata</div>
+            <div class="grid-item"><input name="X-Burguer" value="xb" form="pedido"
+                type="checkbox" /> Suco da Fruta</div>
+            <div class="grid-item"><input name="X-Burguer" value="xb" form="pedido"
+                type="checkbox" /> Grapette</div>
+            <div class="grid-item"><input name="X-Burguer" value="xb" form="pedido"
+                type="checkbox" /> Heineken Long Neck</div>
+          </div>
+          <h3 style="padding-top: 20px;"> Adicione mais sabor </h3>
+          <div class="grid-container">
+            <div class="grid-item"><input name="X-Burguer" value="xb" form="pedido"
+                type="checkbox" /> Ovo</div>
+            <div class="grid-item"><input name="X-Burguer" value="xb" form="pedido"
+                type="checkbox" /> Queijo</div>
+            <div class="grid-item"><input name="X-Burguer" value="xb" form="pedido"
+                type="checkbox" /> Bacon</div>
+            <div class="grid-item"><input name="X-Burguer" value="xb" form="pedido"
+                type="checkbox" /> Salada</div>
+            <div class="grid-item"><input name="X-Burguer" value="xb" form="pedido"
+                type="checkbox" /> Hamburguer</div>
+            <div class="grid-item"><input name="X-Burguer" value="xb" form="pedido"
+                type="checkbox" /> Cebola Empanada</div>
+            <div class="grid-item"><input name="X-Burguer" value="xb" form="pedido"
+                type="checkbox" /> Cebola Caramelizada</div>
+            <div class="grid-item"><input name="X-Burguer" value="xb" form="pedido"
+                type="checkbox" /> Cebola Roxa</div>
+            <div class="grid-item"><input name="X-Burguer" value="xb" form="pedido"
+                type="checkbox" /> Molhos</div>
+            <div class="grid-item"><input name="X-Burguer" value="xb" form="pedido"
+                type="checkbox" /> Abacaxi Grelhado</div>
+          </div>
+          <h3 style="padding-top: 20px;">Extras</h3>
+          <div class="grid-container">
+            <div class="grid-item"><input name="X-Burguer" value="xb" form="pedido"
+                type="checkbox" /> Batata Tradicional</div>
+            <div class="grid-item"><input name="X-Burguer" value="xb" form="pedido"
+                type="checkbox" /> Batata Crazy</div>
+            <div class="grid-item"><input name="X-Burguer" value="xb" form="pedido"
+                type="checkbox" /> Brownie Recheado</div>
+          </div>
+        </form>
+      </content>
+      <div class="latDir"> </div>
+    </div>
+  </body>
+</html>
